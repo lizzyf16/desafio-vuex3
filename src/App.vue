@@ -1,10 +1,20 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="my-3">
+    <h1 class="text-center">Tienda 32 Bits</h1>
   </nav>
-  <router-view/>
+  <CompTabla/>
 </template>
+<script>
+import CompTabla from "./components/CompTabla.vue"
+export default{
+name: "App",
+components:{
+  CompTabla
+}
+}
+
+</script>
+
 
 <style lang="scss">
 #app {
